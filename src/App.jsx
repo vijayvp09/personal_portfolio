@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss'
+import Navbar from "./components/navbar/Navbar"
 
 function App() {
- 
-
-  return (
-    <div className="flex-col justify-center items-center">
-     <h1 className="font-bold text-blue-500 text-3xl">vijay v pillai</h1>
-     <h2 className="font-bold text-black text-2xl">developer</h2>
-     projects: 1: REACT image gallery with pixabay API
-    </div>
-  )
+  return<div>
+    <section><Navbar /></section>    
+    <section>parallax</section>
+    <section>services</section>    
+    <section>parallax</section>    
+    <section>portfolio1</section>    
+    <section>portfolio2</section>    
+    <section>portfolio2</section>    
+    <section>contact</section>    
+  </div>
+  
 }
 
 export default App
