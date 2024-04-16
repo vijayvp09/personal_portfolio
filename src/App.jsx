@@ -9,7 +9,7 @@ function App() {
     <section>parallax</section>    
     <section>portfolio1</section>    
     <section>portfolio2</section>    
-    <section>portfolio2</section>    
+    <section>portfolio</section>    
     <section>contact</section>    
   </div>
   
