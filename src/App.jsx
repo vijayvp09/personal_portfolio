@@ -1,9 +1,13 @@
 import './App.scss'
 import Navbar from "./components/navbar/Navbar"
+import Hero from "./components/hero/Hero"
 
 function App() {
   return<div>
-    <section><Navbar /></section>    
+    <section>
+      <Navbar />
+      <Hero />
+    </section>    
     <section>parallax</section>
     <section>services</section>    
     <section>parallax</section>    
