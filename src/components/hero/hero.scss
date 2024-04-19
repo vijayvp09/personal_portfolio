@@ -8,6 +8,8 @@
         height: 100%;
         margin: auto;
         .textContainer{
+            position: absolute;
+            z-index: 2;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -30,25 +32,36 @@
                     border: 1px solid white;
                     border-radius: 10px;
                     margin-right: 20px;
-                    cursor: pointer;     
+                    cursor: pointer;
+                    font-weight: 300;     
                 }
                 .button1{
                     background-color: transparent;
                     color: white;
                 }
             }
-        }
-        .imageContainer{
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: flex;  
-            margin-right: -90px;
-            img{
-                width: 100%;
-            }
+        } 
+    }
+    .scrollingText{
+        position: absolute;
+        
+        bottom: -220px;
+        height: 100%;
+        font-size: 50vh;
+        white-space: nowrap;
+        color: white;
+        opacity: 5%;
+    }
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        display: flex;  
+        margin-right: -90px;
+        img{
+            width: 100%;
         }
     }
-    
 }
