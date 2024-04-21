@@ -40,6 +40,20 @@ const scrollingTextVariant = {
         }
     }
 }
+const imageVariant = {
+    initial: {
+        y: -10,
+    },
+    animate: {
+        y: 5,
+        transition: {
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+        }
+    }
+}
 const Hero = () => {
     return(
         <div className="hero"> 
@@ -57,9 +71,9 @@ const Hero = () => {
             <motion.div className="scrollingText" variants={scrollingTextVariant} initial="initial" animate="animate">
                 Still Exploring New Technologies
             </motion.div>
-            <div className="imageContainer">
-                <img src="/developer.png" alt="" />
-            </div>
+            <motion.div className="imageContainer" variants={imageVariant}>
+                <motion.img src="/developer.png" alt="" variants= {imageVariant} initial="initial" animate="animate"/>
+            </motion.div>
         </div>
     )
 }
