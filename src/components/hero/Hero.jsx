@@ -30,12 +30,12 @@ const textVariants = {
 
 const scrollingTextVariant = {
     initial: {
-        x: "25%",
+        x: "50%",
     },
     animate: {
         x: "-100%",
         transition: {
-            duration: 20,
+            duration: 15,
             repeat: Infinity,
         }
     }
@@ -69,7 +69,7 @@ const Hero = () => {
                 </motion.div>
             </div>
             <motion.div className="scrollingText" variants={scrollingTextVariant} initial="initial" animate="animate">
-                Still Exploring New Technologies
+                Aspiring Web Developer
             </motion.div>
             <motion.div className="imageContainer" variants={imageVariant}>
                 <motion.img src="/developer.png" alt="" variants= {imageVariant} initial="initial" animate="animate"/>
