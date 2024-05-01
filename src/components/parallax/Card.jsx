@@ -17,14 +17,19 @@ export default function Card({i, color, src, link, details, title, progress, ran
     return(
         <div ref={container} className="container">
             <motion.div className="card" style={{scale: scale ,background: color, marginTop: `calc(-5% + ${i * 55}px)`}}>
-                <h2>{title}</h2>
-                <div className="content">
-                    <p>
-                        {details}
-                        <img src="/github.png" alt="" />
-                    </p>
-                    <motion.a  href={link} ><motion.img animate={{transition:{duration: 2}}} style={{scale: imageScale}} src={src} alt="" /></motion.a>
-                </div>
+                { title===null ? 
+                <div style={{fontSize: '50px', color: 'black'}}>Coming Soon...</div>:
+                <>
+                    <h2>{title}</h2>
+                    <div className="content">
+                        <p>
+                            {details}
+                            <div className="link" href={link}>Go To Site</div>
+                        </p>
+                        <motion.a  href={link} ><motion.img animate={{transition:{duration: 2}}} style={{scale: imageScale}} src={src} alt="" /></motion.a>
+                    </div>
+                </>
+                }
             </motion.div>
         </div>
     )

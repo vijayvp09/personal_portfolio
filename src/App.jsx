@@ -19,15 +19,15 @@ function App() {
       <Navbar />
       <Hero />
     </section>    
-    <section style={{height: `calc(${data.length} * 100vh)`}}>
-      <div ref={container} style={{background: 'linear-gradient(180deg, #111132, #0c0c1d, #111132)'}}>
-        {data.map((item, i) => {
-          const targetScale = 1 - ((data.length - i) * 0.05);
-          return(
-            <Card key={i} i={i} {...item} progress={scrollYProgress} targetScale={targetScale} range={[i * 0.25, 1]}/>
-          )
-        })}
-      </div>
+    <section style={{height: `calc(${data.length} * 100vh)`}}> 
+        <div ref={container} style={{background: 'linear-gradient(180deg, #111132, #0c0c1d, #111132)'}}>
+          {data.map((item, i) => {
+            const targetScale = 1 - ((data.length - i) * 0.05);
+            return(
+              <Card key={i} i={i} {...item} progress={scrollYProgress} targetScale={targetScale} range={[i * 0.25, 1]}/>
+            )
+          })}
+        </div>
     </section>
     <section>services</section>    
     <section>parallax</section>    
