@@ -35,7 +35,7 @@ const scrollingTextVariant = {
     animate: {
         x: "-100%",
         transition: {
-            duration: 15,
+            duration: 10,
             repeat: Infinity,
         }
     }
@@ -56,14 +56,21 @@ const imageVariant = {
 }
 const Hero = () => {
     return(
-        <div className="hero"> 
+        <div className="hero" > 
+            <motion.span className="menu" initial={{x:'150%', opacity:0}} animate={{opacity:1, x:0}} transition={{duration: 1.5, damping: 15, stiffness: 500, type: 'spring'}}>
+                    <div className="images">
+                        <a href="#Home" ><img src="/home.png" /></a>
+                        <a href="#Projects"><img src="/cook.png" /></a>
+                        <a href="#Contact"><img src="/phonecall.png" /></a>
+                    </div>
+            </motion.span>
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
                     <motion.h2 variants={textVariants}>VIJAY V PILLAI</motion.h2>
                     <motion.h1 variants={textVariants}>Web Developer</motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
-                        <motion.button className="button1" variants={textVariants}>See The Latest Works</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+                    <a href="#Projects"><motion.button className="button1" variants={textVariants}> See The Latest Works</motion.button></a>
+                    <a href="#Contact"><motion.button variants={textVariants}>Contact Me</motion.button></a>
                     </motion.div >
                     <motion.img src="/mouseCursor.png" alt="" variants={textVariants} initial="scrollButtonInitial" animate="scrollButtonAnimate"/>
                 </motion.div>

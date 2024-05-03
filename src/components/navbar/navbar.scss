@@ -5,14 +5,14 @@
         margin: auto;
         max-width: 1280px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         height: 100%;
-        span{
-            font-weight: bold;
-        }
+        position: relative;
         .social{
+            position: absolute;
             display: flex;
+            justify-content: end;
+            width: 100%;
             gap: 10px;
             a{
                 img{

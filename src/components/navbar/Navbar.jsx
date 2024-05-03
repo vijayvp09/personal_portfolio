@@ -1,15 +1,15 @@
 import './navbar.scss'
 import { motion } from 'framer-motion'
+import { IoHomeOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return(
         <div className="navbar">
             <div className="wrapper">
-                <motion.span initial={{x:-300, opacity:0}} animate={{opacity:1, x:0}} transition={{duration:.5}}>Vijay V Pillai</motion.span>
                 <div className="social">
-                    <a href="#"><img src="/linkedin.png" alt="" /></a>
-                    <a href="#"><img src="/github.png" alt="" /></a>
-                    <a href="#"><img src="/twitter.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/in/vijay-v-pillai-b44b392a1/"><img src="/linkedin.png" alt="" /></a>
+                    <a href="https://github.com/vijayvp09"><img src="/github.png" alt="" /></a>
+                    <a href="https://twitter.com/VIJAY_V_P"><img src="/twitter.png" alt="" /></a>
                 </div>
             </div>
         </div>

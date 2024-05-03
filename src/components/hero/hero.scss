@@ -3,6 +3,36 @@
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
+    .menu{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background-color: rgba(128,128,128,0.3);
+            border: 1px solid rgba(128,128,128,0.9);
+            border-radius: 20px;
+            padding: 5px;
+            padding-inline: 10px;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 25px;
+                    transition: transform 0.3s ease-in-out;
+                    &:hover{
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+    }
     .wrapper{
         max-width: 1280px;
         height: 100%;
@@ -18,7 +48,7 @@
             h2{
                 letter-spacing: 10px;
                 font-size:30px;
-                color: skyblue;
+                color: #87ceeb;
             }
             h1{
                 font-size: 88px;
@@ -34,17 +64,18 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;     
+                    scroll-behavior: smooth;
                 }
                 .button1{
                     background-color: transparent;
                     color: white;
+                    scroll-behavior: smooth;
                 }
             }
         } 
     }
     .scrollingText{
         position: absolute;
-        
         bottom: -220px;
         height: 100%;
         font-size: 50vh;

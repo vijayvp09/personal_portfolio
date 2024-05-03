@@ -4,7 +4,8 @@ import Hero from "./components/hero/Hero"
 import Card from "./components/parallax/Card"
 import data from "./data"
 import { useRef } from "react"
-import {useScroll, motion} from "framer-motion"
+import { useScroll } from "framer-motion"
+import Contact  from './components/contact/Contact'
 
 function App() {
 
@@ -15,12 +16,12 @@ function App() {
   })
 
   return<div>
-    <section>
+    <section id="Home">
       <Navbar />
       <Hero />
     </section>    
-    <section style={{height: `calc(${data.length} * 100vh)`}}> 
-        <div ref={container} style={{background: 'linear-gradient(180deg, #111132, #0c0c1d, #111132)'}}>
+    <section id="Projects" style={{height: `calc(${data.length} * 100vh)`}}> 
+        <div ref={container} style={{background: 'linear-gradient(180deg, #111132, #111132, #0c0c1d)'}}>
           {data.map((item, i) => {
             const targetScale = 1 - ((data.length - i) * 0.05);
             return(
@@ -29,9 +30,7 @@ function App() {
           })}
         </div>
     </section>
-    <section>services</section>    
-    <section>parallax</section>    
-    <section>portfolio1</section>       
+    <section id="Contact"><Contact /></section>         
   </div>
   
 }
