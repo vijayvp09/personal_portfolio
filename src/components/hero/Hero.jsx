@@ -16,14 +16,16 @@ const textVariants = {
     },
     scrollButtonInitial: {
         y: -10,
-        opacity: 1,
+        
     },
     scrollButtonAnimate: {
         y: 10,
-        opacity: 0, 
+         
         transition: {
             duration: 2,
             repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
         }
     }
 }
