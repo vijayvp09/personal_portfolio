@@ -1,6 +1,4 @@
 import './navbar.scss'
-import { motion } from 'framer-motion'
-import { IoHomeOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return(
