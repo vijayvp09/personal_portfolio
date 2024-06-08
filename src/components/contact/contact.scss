@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .containerContact{
     background: linear-gradient(180deg, #0c0c1d, #0c0c1d, #111132);
     width: 100%;
@@ -63,6 +65,42 @@
                 background-color: black;
                 color: white;
                 border: 1px solid rgb(71, 70, 70);
+            }
+        }
+    }
+}
+
+@include mobile{
+    .containerContact{
+        flex-direction: column;
+        
+        .contentContact{
+            flex: 2;
+            width: 100%;
+            justify-content: end;
+            .title{
+                font-size: 50px;
+            }
+            .contacts{
+                width: 100%;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                gap: 10px;
+                .mail{
+                    h2{
+                        display: none;
+                    }
+                }
+            }
+        }
+        form{
+            justify-content: start;
+            padding-top: 70px;
+            flex: 3;
+            width: 100%;
+            input, textarea{
+                width: 75%;
             }
         }
     }

@@ -1,14 +1,25 @@
+@import "../../App.scss";
+
 .hero{
     height: calc(100vh - 100px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
+    @include mobile {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
     .menu{
         margin-top: 10px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include mobile{
+            margin-top: 0px;
+        }
+        
         .images{
             display: flex;
             justify-content: center;
@@ -37,6 +48,10 @@
         max-width: 1280px;
         height: 100%;
         margin: auto;
+        @include mobile{
+            display: flex;
+            justify-content: center;
+        }
         .textContainer{
             position: absolute;
             z-index: 2;
@@ -45,13 +60,23 @@
             flex-direction: column;
             justify-content: center;
             gap: 40px;
+            @include mobile{
+                align-items: center;
+                bottom: -60px;
+            }
             h2{
                 letter-spacing: 10px;
                 font-size:30px;
                 color: #87ceeb;
+                @include mobile{
+                    font-size: 20px;
+                }
             }
             h1{
                 font-size: 88px;
+                @include mobile{
+                    font-size: 50px;
+                }
             }
             img{
                     width:60px;   
@@ -72,6 +97,11 @@
                     scroll-behavior: smooth;
                 }
             }
+            .cursor{
+                @include mobile{
+                    display: none;
+                }
+            }
         } 
     }
     .scrollingText{
@@ -82,6 +112,10 @@
         white-space: nowrap;
         color: white;
         opacity: 5%;
+        @include mobile{
+            font-size: 25vh;
+        
+        }
     }
     .imageContainer{
         height: 100%;
@@ -91,8 +125,17 @@
         right: 0;
         display: flex;  
         margin-right: -90px;
+        @include mobile{
+            margin-right: 0;
+            margin-top: 10px;
+            
+        }
         img{
             width: 100%;
+            @include mobile{
+                height: 50%;
+                object-fit: cover;
+            }
         }
     }
 }

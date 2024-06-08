@@ -71,10 +71,10 @@ const Hero = () => {
                     <motion.h2 variants={textVariants}>VIJAY V PILLAI</motion.h2>
                     <motion.h1 variants={textVariants}>Web Developer</motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
-                    <a href="#Projects"><motion.button className="button1" variants={textVariants}> See The Latest Works</motion.button></a>
-                    <a href="#Contact"><motion.button variants={textVariants}>Contact Me</motion.button></a>
+                        <a href="#Projects"><motion.button className="button1" variants={textVariants}> See The Latest Works</motion.button></a>
+                        <a href="#Contact"><motion.button variants={textVariants}>Contact Me</motion.button></a>
                     </motion.div >
-                    <motion.img src="/mouseCursor.png" alt="" variants={textVariants} initial="scrollButtonInitial" animate="scrollButtonAnimate"/>
+                    <motion.img className="cursor" src="/mouseCursor.png" alt="" variants={textVariants} initial="scrollButtonInitial" animate="scrollButtonAnimate"/>
                 </motion.div>
             </div>
             <motion.div className="scrollingText" variants={scrollingTextVariant} initial="initial" animate="animate">

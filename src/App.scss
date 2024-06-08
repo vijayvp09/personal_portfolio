@@ -30,5 +30,10 @@ section{
     }
 }
 
+@mixin small{
+    @media (max-width: 480px) {
+        @content;
+    }
+}
 
 

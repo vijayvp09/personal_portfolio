@@ -13,7 +13,8 @@
         
         .social{
             @include mobile{
-                justify-content: center
+                justify-content: end;
+                gap: 12px;
             }
             position: absolute;
             display: flex;
