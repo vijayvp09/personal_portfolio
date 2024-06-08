@@ -81,7 +81,7 @@ const Hero = () => {
                 Aspiring Web Developer
             </motion.div>
             <motion.div className="imageContainer" variants={imageVariant}>
-                <motion.img src="/developer.png" alt="" variants= {imageVariant} initial="initial" animate="animate"/>
+                <motion.img src="/developer.png" loading="lazy" alt="" variants= {imageVariant} initial="initial" animate="animate"/>
             </motion.div>
         </div>
     )

@@ -18,6 +18,7 @@
         align-items: center;
         @include mobile{
             margin-top: 0px;
+            display: none;
         }
         
         .images{
@@ -30,15 +31,20 @@
             border-radius: 20px;
             padding: 5px;
             padding-inline: 10px;
+            
             a{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+                
+                img{                   
                     width: 25px;
                     transition: transform 0.3s ease-in-out;
                     &:hover{
                         transform: scale(2);
+                    }
+                    @include mobile{
+                          
                     }
                 }
             }
@@ -114,6 +120,7 @@
         opacity: 5%;
         @include mobile{
             font-size: 25vh;
+            bottom: 0px;
         
         }
     }
