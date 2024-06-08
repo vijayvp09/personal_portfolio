@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .navbar{
     height: 100px;
     
@@ -8,7 +10,11 @@
         align-items: center;
         height: 100%;
         position: relative;
+        
         .social{
+            @include mobile{
+                justify-content: center
+            }
             position: absolute;
             display: flex;
             justify-content: end;
